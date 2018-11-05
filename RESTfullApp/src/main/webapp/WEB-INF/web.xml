@@ -12,14 +12,14 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
         </servlet-class>
         <init-param>
              <param-name>com.sun.jersey.config.property.packages</param-name>
-             <param-value>com.xor.swit.messanger</param-value>
+             <param-value>com.xor.swit.messanger.resource</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
  
     <servlet-mapping>
         <servlet-name>jersey-serlvet</servlet-name>
-        <url-pattern>/RESTfullApp*</url-pattern>
+        <url-pattern>/RESTfullApp/*</url-pattern>
     </servlet-mapping>
  
 </web-app>
